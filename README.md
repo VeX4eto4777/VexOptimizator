@@ -1,218 +1,151 @@
 # VexOptimizator
-Minecraft spigot papermc optimization java plugin .
-# VexOptimizator
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/VexTeam/VexOptimizator)
-[![Minecraft](https://img.shields.io/badge/Minecraft-1.21-green.svg)](https://papermc.io/)
-[![Java](https://img.shields.io/badge/Java-21-orange.svg)](https://adoptium.net/)
+A high-performance optimization plugin for Paper servers that improves TPS stability, manages memory, and performs intelligent lag reduction. Operates invisibly and dynamically adjusts optimizations based on load.
 
-An invisible, high-performance optimization engine for Paper servers featuring Smart ClearLag, advanced entity management, and comprehensive server monitoring.
+## Description
 
-##  Description
+VexOptimizator enhances server performance with Smart ClearLag, entity control, memory management, and TPS monitoring. It runs automatically, requiring no manual tuning.
 
-VexOptimizator is a powerful, lightweight optimization plugin designed for Minecraft Paper servers. It provides invisible performance enhancements through intelligent monitoring and automatic optimization, featuring a sophisticated Smart ClearLag system that protects player items while maintaining optimal server performance.
+## Features
 
-The plugin operates seamlessly in the background, dynamically adjusting optimizations based on server load and TPS, ensuring maximum performance without manual intervention.
+Core modules:  
+Smart ClearLag – Intelligent cleanup that protects player items  
+Entity Limiter – Prevents excessive mob spawning  
+Hopper Optimizer – Reduces hopper network lag  
+Redstone Profiler – Detects heavy redstone circuits  
+Chunk Cache Cleaner – Frees memory from unused chunks  
+Tick Balancer – Dynamically maintains TPS  
 
-##  Main Features
+Protection and monitoring:  
+Memory Watchdog – Alerts and recovers on high memory  
+AFK Optimization – Reduces load from inactive players  
+Module Recovery – Auto restarts failed modules  
+TPS Monitor – Real-time diagnostics  
 
-###  Core Optimization Modules
-- **Smart ClearLag**: Intelligent item cleanup with player protection and configurable intervals
-- **Entity Limiter**: Advanced mob spawning control to prevent entity overload
-- **Hopper Optimizer**: Efficient hopper network optimization to reduce lag
-- **Redstone Profiler**: Complex redstone circuit monitoring and optimization
-- **Chunk Cache Cleaner**: Automatic cleanup of unused chunks to free memory
-- **Tick Balancer**: Dynamic TPS balancing with automatic optimization triggers
+Advanced options:  
+VexAPI integration for extended monitoring  
+Asynchronous chunk operations  
+Entity AI disable for unloaded areas  
+Configurable countdowns and messages  
 
-###  Protection & Monitoring
-- **Memory Watchdog**: Advanced memory monitoring with emergency measures
-- **AFK Optimization**: Reduced view distance for inactive players
-- **Module Recovery**: Automatic error handling and module restart capabilities
-- **TPS Monitoring**: Real-time performance tracking with diagnostic tools
+## Installation
 
-###  Advanced Features
-- **VexAPI Integration**: Seamless integration with VexAPI for enhanced monitoring
-- **Async Chunk I/O**: Improved chunk loading/saving performance
-- **Entity AI Disable**: Performance boost for entities in unloaded chunks
-- **Configurable Warnings**: Customizable countdown messages for ClearLag
+Requirements:  
+- Minecraft 1.21+  
+- Paper server (recommended)  
+- Java 21+  
+- Optional: VexAPI  
 
-##  Installation
+Steps:  
+1. Download VexOptimizator.jar from Releases  
+2. Place it in `/plugins/`  
+3. Restart the server  
+4. Edit `config.yml` as needed  
+5. Run `/vexopt reload` to apply changes  
 
-### Requirements
-- **Minecraft Version**: 1.21+
-- **Server Software**: Paper (recommended) or compatible forks
-- **Java Version**: 21+
-- **Dependencies**: None (VexAPI optional for enhanced features)
+## Commands
 
-### Installation Steps
+`/vexopt status` – Show current optimization status  
+`/vexopt stats` – Display live metrics  
+`/# VexOptimizator
 
-1. **Download the plugin**
-   ```bash
-   # Download VexOptimizator-1.0.0.jar from releases
-   ```
+A high-performance optimization plugin for Paper servers that improves TPS stability, manages memory, and performs intelligent lag reduction. Operates invisibly and dynamically adjusts optimizations based on load.
 
-2. **Place in plugins folder**
-   ```bash
-   # Copy the jar file to your server's plugins directory
-   cp VexOptimizator-1.0.0.jar /path/to/server/plugins/
-   ```
+## Description
 
-3. **Restart your server**
-   ```bash
-   # The plugin will automatically generate configuration files
-   ```
+VexOptimizator enhances server performance with Smart ClearLag, entity control, memory management, and TPS monitoring. It runs automatically, requiring no manual tuning.
 
-4. **Configure (Optional)**
-   - Edit `plugins/VexOptimizator/config.yml` to customize settings
-   - Restart server or use `/vexopt reload` to apply changes
+## Features
 
-### Optional: VexAPI Integration
+Core modules:  
+Smart ClearLag – Intelligent cleanup that protects player items  
+Entity Limiter – Prevents excessive mob spawning  
+Hopper Optimizer – Reduces hopper network lag  
+Redstone Profiler – Detects heavy redstone circuits  
+Chunk Cache Cleaner – Frees memory from unused chunks  
+Tick Balancer – Dynamically maintains TPS  
 
-For enhanced monitoring and statistics:
-1. Install VexAPI plugin alongside VexOptimizator
-2. Enable integration in `config.yml`:
-   ```yaml
-   integration:
-     vexapi: true
-   ```
+Protection and monitoring:  
+Memory Watchdog – Alerts and recovers on high memory  
+AFK Optimization – Reduces load from inactive players  
+Module Recovery – Auto restarts failed modules  
+TPS Monitor – Real-time diagnostics  
 
-##  Commands
+Advanced options:  
+VexAPI integration for extended monitoring  
+Asynchronous chunk operations  
+Entity AI disable for unloaded areas  
+Configurable countdowns and messages  
 
-### Main Command: `/vexopt`
-*Permission: `vexopt.admin`*
+## Installation
 
-| Command | Description |
-|---------|-------------|
-| `/vexopt status` | Show current server optimization status |
-| `/vexopt stats` | Display live optimization metrics |
-| `/vexopt tps` | Show TPS diagnostics and potential lag sources |
-| `/vexopt clear items` | Force immediate item cleanup |
-| `/vexopt reload` | Reload configuration without restart |
+Requirements:  
+- Minecraft 1.21+  
+- Paper server (recommended)  
+- Java 21+  
+- Optional: VexAPI  
 
-### ClearLag Command: `/clearlag`
-*Permission: `vexopt.clearlag`*
+Steps:  
+1. Download VexOptimizator.jar from Releases  
+2. Place it in `/plugins/`  
+3. Restart the server  
+4. Edit `config.yml` as needed  
+5. Run `/vexopt reload` to apply changes  
 
-| Command | Description |
-|---------|-------------|
-| `/clearlag now` | Force immediate item cleanup |
-| `/clearlag status` | Show ClearLag module status |
-| `/clearlag toggle` | Enable/disable ClearLag (admin only) |
+## Commands
 
-##  Configuration
+`/vexopt status` – Show current optimization status  
+`/vexopt stats` – Display live metrics  
+`/vexopt tps` – Show TPS and lag sources  
+`/vexopt clear items` – Force cleanup  
+`/vexopt reload` – Reload configuration  
+`/clearlag now` – Manual cleanup  
+`/clearlag toggle` – Enable or disable ClearLag  
 
-VexOptimizator includes a comprehensive configuration file (`config.yml`) with detailed explanations for all settings.
+## Configuration
 
-### Key Configuration Sections
-
-#### General Optimization Settings
+Example config:
 ```yaml
 general:
-  tps_monitor: true          # Enable TPS monitoring
-  optimize_entities: true    # Entity optimization
-  optimize_redstone: true    # Redstone circuit optimization
-  optimize_chunks: true      # Chunk management
-  async_chunk_io: true       # Asynchronous chunk operations
-```
+  tps_monitor: true
+  optimize_entities: true
+  optimize_redstone: true
+  async_chunk_io: true
 
-#### ClearLag Configuration
-```yaml
 clearlag:
-  enabled: true              # Enable automatic cleanup
-  interval_minutes: 20       # Cleanup interval
-  delete_batch_size: 200     # Items per tick
-  player_protect_seconds: 60 # Player item protection time
-  warnings: ["10m","5m","4m","3m","2m","1m","20s","10s","5s","4s","3s","2s","1s"]
-```
+  enabled: true
+  interval_minutes: 20
+  player_protect_seconds: 60
+  warnings: ["10m", "5m", "1m", "10s", "5s"]
 
-#### Memory Management
-```yaml
 memory_watchdog:
   enabled: true
-  warn_threshold: 0.9        # Warning at 90% memory usage
-  emergency_threshold: 0.95  # Emergency measures at 95%
-  auto_suspend_tasks: true   # Suspend non-essential tasks
-```
+  warn_threshold: 0.9
+  emergency_threshold: 0.95
+ tps` – Show TPS and lag sources  
+`/vexopt clear items` – Force cleanup  
+`/vexopt reload` – Reload configuration  
+`/clearlag now` – Manual cleanup  
+`/clearlag toggle` – Enable or disable ClearLag  
 
-#### Module Control
+## Configuration
+
+Example config:
 ```yaml
-modules:
-  HopperOptimizer: true
-  EntityLimiter: true
-  ClearLag: true
-```
+general:
+  tps_monitor: true
+  optimize_entities: true
+  optimize_redstone: true
+  async_chunk_io: true
 
-### Message Customization
+clearlag:
+  enabled: true
+  interval_minutes: 20
+  player_protect_seconds: 60
+  warnings: ["10m", "5m", "1m", "10s", "5s"]
 
-All messages can be customized in the configuration file with support for color codes and placeholders:
+memory_watchdog:
+  enabled: true
+  warn_threshold: 0.9
+  emergency_threshold: 0.95
 
-```yaml
-messages:
-  prefix: "&b┃ ᴠᴇx&fᴏᴘᴛɪᴍɪᴢᴀᴛᴏʀ &8┃&r "
-  clear_complete: "%prefix%&aCleared &f%count% &aitems in &f%time%ms&a."
-```
-
-##  Integration
-
-### VexAPI Integration
-
-VexOptimizator seamlessly integrates with VexAPI for enhanced monitoring:
-
-- **Advanced Statistics**: Detailed performance metrics
-- **Remote Monitoring**: Server status via external APIs
-- **Custom Dashboards**: Integration with monitoring panels
-
-Enable in configuration:
-```yaml
-integration:
-  vexapi: true
-  log-level: minimal  # minimal/reduced/full
-```
-
-### Plugin Compatibility
-
-- **Compatible**: Works alongside most optimization plugins
-- **Smart Detection**: Automatically disables conflicting ClearLag plugins
-- **Load Order**: Specify `loadbefore: [VexAPI]` in plugin.yml for proper integration
-
-##  Performance Metrics
-
-Monitor your server's performance with built-in commands:
-
-```
-/vexopt stats
-```
-Shows: TPS, Active Chunks, Entity Count, Memory Usage, Next ClearLag
-
-```
-/vexopt tps
-```
-Provides: TPS diagnostics, memory usage, entity counts, and lag source detection
-
-##  Support
-
-### Getting Help
-
-- **Documentation**: Check the configuration file comments for detailed explanations
-- **Commands**: Use `/vexopt status` and `/vexopt tps` for diagnostics
-- **Logs**: Check server logs for detailed error information
-
-### Reporting Issues
-
-- **GitHub Issues**: [Create an issue](https://github.com/VexTeam/VexOptimizator/issues) with:
-  - Server version and Java version
-  - Full server log (during issue)
-  - Configuration file
-  - Steps to reproduce
-
-### Community Support
-
-- **Discord**: Join our community Discord for real-time support
-- **GitHub Discussions**: Community discussions and troubleshooting
-
-##  License
-
-VexOptimizator is licensed under the MIT License. See [LICENSE](LICENSE) file for details.
-
----
-
-**VexTeam** - High-performance Minecraft server optimizatio
