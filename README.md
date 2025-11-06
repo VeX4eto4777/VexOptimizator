@@ -76,7 +76,7 @@ For enhanced monitoring and statistics:
      vexapi: true
    ```
 
-## 🎮 Commands
+##  Commands
 
 ### Main Command: `/vexopt`
 *Permission: `vexopt.admin`*
@@ -98,7 +98,7 @@ For enhanced monitoring and statistics:
 | `/clearlag status` | Show ClearLag module status |
 | `/clearlag toggle` | Enable/disable ClearLag (admin only) |
 
-## ⚙️ Configuration
+##  Configuration
 
 VexOptimizator includes a comprehensive configuration file (`config.yml`) with detailed explanations for all settings.
 
@@ -151,7 +151,7 @@ messages:
   clear_complete: "%prefix%&aCleared &f%count% &aitems in &f%time%ms&a."
 ```
 
-## 🔗 Integration
+##  Integration
 
 ### VexAPI Integration
 
