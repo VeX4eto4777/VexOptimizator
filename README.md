@@ -88,3 +88,7 @@ Permission: vexopt.clearlag
 ## License
 
 VexOptimizator is licensed under the MIT License. See LICENSE file for details.
+
+## Discord
+[![Join our Discord](https://img.shields.io/badge/Discord-Join%20Now-5865F2?logo=discord&logoColor=white)](https://discord.gg/EH7afrRCQv)
+
